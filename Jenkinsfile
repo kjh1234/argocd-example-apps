@@ -11,5 +11,6 @@ pipeline {
   }
   environment {
     jenkins = 'file'
+    GIT_CREDENTIALS_ID = 'GIT_CREDENTIALS_ID'
   }
 }
