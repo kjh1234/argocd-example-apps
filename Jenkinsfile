@@ -4,6 +4,7 @@ pipeline {
     stage('checkout') {
       steps {
         sh 'echo "test"'
+        git(url: 'https://github.com/kjh1234/argocd-example-apps.git', branch: 'test', credentialsId: 'GIT_CREDENTIALS_ID')
       }
     }
 
